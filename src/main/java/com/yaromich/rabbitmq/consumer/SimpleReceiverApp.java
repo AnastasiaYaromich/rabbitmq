@@ -30,6 +30,7 @@ public class SimpleReceiverApp {
         channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> {
         });
 
+
         while (true) {
             String command = sc.nextLine();
             int i= command.indexOf(" ");
