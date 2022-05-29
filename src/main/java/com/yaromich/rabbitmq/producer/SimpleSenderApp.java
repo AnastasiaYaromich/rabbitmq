@@ -24,6 +24,7 @@ public class SimpleSenderApp {
              channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, "python");
 
 
+
             Scanner scanner = new Scanner(System.in);
             while (true) {
                 String message = scanner.nextLine();
